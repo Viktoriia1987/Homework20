@@ -1,1 +1,148 @@
 
+vvoin@LAPTOP-5C7SFN90 MINGW64 ~
+$ mkdir lesson21
+
+vvoin@LAPTOP-5C7SFN90 MINGW64 ~
+$ cd lesson21
+
+vvoin@LAPTOP-5C7SFN90 MINGW64 ~/lesson21
+$ git clone https://github.com/Viktoriia1987/Homework20.git
+Cloning into 'Homework20'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+vvoin@LAPTOP-5C7SFN90 MINGW64 ~/lesson21
+$ cd Homework20
+
+vvoin@LAPTOP-5C7SFN90 MINGW64 ~/lesson21/Homework20 (main)
+$ git branch new-branch
+
+vvoin@LAPTOP-5C7SFN90 MINGW64 ~/lesson21/Homework20 (main)
+$ git checkout new branch
+error: pathspec 'new' did not match any file(s) known to git
+error: pathspec 'branch' did not match any file(s) known to git
+
+vvoin@LAPTOP-5C7SFN90 MINGW64 ~/lesson21/Homework20 (main)
+$ git checkout new-branch
+Switched to branch 'new-branch'
+
+vvoin@LAPTOP-5C7SFN90 MINGW64 ~/lesson21/Homework20 (new-branch)
+$ git status
+On branch new-branch
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+vvoin@LAPTOP-5C7SFN90 MINGW64 ~/lesson21/Homework20 (new-branch)
+$ git add index.html
+
+vvoin@LAPTOP-5C7SFN90 MINGW64 ~/lesson21/Homework20 (new-branch)
+$ git commit -m "added new file"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'vvoin@LAPTOP-5C7SFN90.(none)')
+
+vvoin@LAPTOP-5C7SFN90 MINGW64 ~/lesson21/Homework20 (new-branch)
+$  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+vvoin@LAPTOP-5C7SFN90 MINGW64 ~/lesson21/Homework20 (new-branch)
+$ git config --global user.email "voinovskayavika@gmail.com"
+
+vvoin@LAPTOP-5C7SFN90 MINGW64 ~/lesson21/Homework20 (new-branch)
+$ git cunfig --global user.email "Viktoriia1987"
+git: 'cunfig' is not a git command. See 'git --help'.
+
+The most similar command is
+        config
+
+vvoin@LAPTOP-5C7SFN90 MINGW64 ~/lesson21/Homework20 (new-branch)
+$ git config --global user.email "Viktoriia1987"
+
+vvoin@LAPTOP-5C7SFN90 MINGW64 ~/lesson21/Homework20 (new-branch)
+$ git commit -m "added new file"
+[new-branch e433cde] added new file
+ 1 file changed, 22 insertions(+)
+ create mode 100644 index.html
+
+vvoin@LAPTOP-5C7SFN90 MINGW64 ~/lesson21/Homework20 (new-branch)
+$ git push orign new-branch
+fatal: 'orign' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+vvoin@LAPTOP-5C7SFN90 MINGW64 ~/lesson21/Homework20 (new-branch)
+$
+
+vvoin@LAPTOP-5C7SFN90 MINGW64 ~/lesson21/Homework20 (new-branch)
+$ git push orign new-branch
+fatal: 'orign' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+vvoin@LAPTOP-5C7SFN90 MINGW64 ~/lesson21/Homework20 (new-branch)
+$ git remote add origin
+git remote add origin
+git remote add orogin https://github.com/Viktoriia1987/Homework20.git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --[no-]fetch      fetch the remote branches
+    --[no-]tags           import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --[no-]track <branch>
+                          branch(es) to track
+    -m, --[no-]master <branch>
+                          master branch
+    --[no-]mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+usage: git remote add [<options>] <name> <url>
+
+    -f, --[no-]fetch      fetch the remote branches
+    --[no-]tags           import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --[no-]track <branch>
+                          branch(es) to track
+    -m, --[no-]master <branch>
+                          master branch
+    --[no-]mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+vvoin@LAPTOP-5C7SFN90 MINGW64 ~/lesson21/Homework20 (new-branch)
+$ git push origin new-branch
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 695 bytes | 695.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+
+remote:
+remote: Create a pull request for 'new-branch' on GitHub by visiting:
+remote:      https://github.com/Viktoriia1987/Homework20/pull/new/new-branch
+remote:
+To https://github.com/Viktoriia1987/Homework20.git
+ * [new branch]      new-branch -> new-branch
+
+vvoin@LAPTOP-5C7SFN90 MINGW64 ~/lesson21/Homework20 (new-branch)
+$ https://github.com/Viktoriia1987/Homework20.git
+
